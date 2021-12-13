@@ -8,7 +8,8 @@ then
     fi
 
     # Configure Oh My Zsh
-    ln -s .oh-my-zsh/custom ~/.oh-my-zsh/custom
-    ln -s .zshrc ~/.zshrc
+    rm -rf ~/dotfiles/.oh-my-zsh/custom
+    ln -sf ~/dotfiles/.oh-my-zsh/custom ~/.oh-my-zsh/custom
+    ln -sf ~/dotfiles/.zshrc ~/.zshrc
 fi
 
