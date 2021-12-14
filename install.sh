@@ -1,6 +1,6 @@
-if [ -n $ZSH_NAME ]
+if [ -n "$ZSH_NAME" ];
 then
-    if [ ! -n $SPIN ]
+    if [ ! -n "$SPIN" ];
     then
         # Install Oh My Zsh
         if [ ! -d ~/.oh-my-zsh ]
@@ -9,7 +9,7 @@ then
         fi
 
         # Configure Oh My Zsh
-        rm -rf ~/dotfiles/.oh-my-zsh/custom
+        rm -rf ~/.oh-my-zsh/custom
         ln -sf ~/dotfiles/.oh-my-zsh/custom ~/.oh-my-zsh/custom
         ln -sf ~/dotfiles/.zshrc ~/.zshrc
     fi
